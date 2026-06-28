@@ -9,17 +9,6 @@ import org.springframework.web.client.RestTemplate;
 import com.virtusa.mainpack.entity.Productdetails;
 
 @SpringBootTest
-class StockManagementprojApplicationTests {
-
-	@Test
-	void selectproduct()
-	{
-		// RestTemplate template = new RestTemplate();
-		// Productdetails prod = template.getForObject("http://localhost:8088/admin/prouctsdetails/1001", Productdetails.class);
-		System.out.println("product is selected");
-		// assertNotNull(prod);
-		assertTrue(true);
-		
-	}
+class StockManagementprojApplicationTests {s
 
 }

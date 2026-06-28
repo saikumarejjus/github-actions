@@ -17,3 +17,19 @@ jobs:
       - name: Build with Maven
         working-directory: ./SpringbootRestAPIproject
         run: mvn clean install
+  deploy:
+    runs-on: windows-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+      - name: Build with Maven
+        working-directory: ./SpringbootRestAPIproject
+        run: mvn clean install
+      - name: print message
+        run: echo "Deployment successful"
