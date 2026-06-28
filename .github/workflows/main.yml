@@ -1,8 +1,5 @@
 name: firstwork
-on:
-  push:
-    branches:
-      - main
+on: [push,  workflow_dispatch]
 jobs:
   build:
     runs-on: windows-latest
