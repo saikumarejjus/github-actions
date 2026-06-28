@@ -9,6 +9,6 @@ import org.springframework.web.client.RestTemplate;
 import com.virtusa.mainpack.entity.Productdetails;
 
 @SpringBootTest
-class StockManagementprojApplicationTests {s
+class StockManagementprojApplicationTests {
 
 }
