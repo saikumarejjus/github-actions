@@ -5,4 +5,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: print message
+        shell: bash
         run: echo "${{ toJSON(github.event) }}"
